@@ -194,3 +194,28 @@ nav a.active{color:var(--accent-dark);box-shadow:inset 0 -2px 0 var(--accent)}
 .logo-light .logo-svg .lg-red,.logo-light .logo-svg .lg-redf{fill:#ff6b6b}.logo-light .logo-svg .lg-plus{stroke:#ff6b6b}
 .logo-light .logo-org{color:#fff}
 @media (prefers-reduced-motion:reduce){.logo-svg .lg-bar{animation:none}}
+
+/* logo v3: harmonised with site palette (navy + teal), battery-E with charging bars */
+.logo .logo-svg3{height:40px;width:auto;display:block;overflow:visible}
+.logo-svg3 .l3-ink{fill:var(--brand)}
+.logo-svg3 .l3-gray{fill:#93a8b6}
+.logo-svg3 .l3-grayf{fill:#93a8b6}
+.logo-svg3 .l3-shell{fill:none;stroke:#93a8b6;stroke-width:3.5}
+.logo-svg3 .l3-sign{stroke:var(--brand);stroke-width:3;stroke-linecap:round}
+.logo-svg3 .l3-c1{fill:#8fd0ee}.logo-svg3 .l3-c2{fill:var(--accent)}.logo-svg3 .l3-c3{fill:#2a7fb8}
+.logo-svg3 .l3-slot{opacity:.25}
+.logo-svg3 .l3-bar{transform-box:fill-box;transform-origin:left center;animation:l3-charge 3.4s ease-in-out infinite}
+.logo-svg3 .l3-b2{animation-delay:.35s}.logo-svg3 .l3-b3{animation-delay:.7s}
+@keyframes l3-charge{0%,6%{transform:scaleX(0)}28%,84%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.logo-org{color:var(--muted)}
+.logo-light .logo-svg3 .l3-ink{fill:#fff}
+.logo-light .logo-svg3 .l3-gray,.logo-light .logo-svg3 .l3-grayf{fill:#b9c8d3}
+.logo-light .logo-svg3 .l3-shell{stroke:#b9c8d3}.logo-light .logo-svg3 .l3-sign{stroke:#fff}
+.logo-light .logo-org{color:#cfe0ea}
+@media (prefers-reduced-motion:reduce){.logo-svg3 .l3-bar{animation:none}}
+/* inline hero illustration + hover zoom on R&D cards */
+.hero-img.hero-svg{display:block;width:100%;height:clamp(240px,35vw,560px);background:none}
+.hero-svg .rd-hover{opacity:0;cursor:pointer;transform-box:fill-box;transform-origin:center;transition:transform .35s ease,opacity .2s ease}
+.hero-svg .rd-hover:hover,.hero-svg .rd-hover:focus-visible{opacity:1;transform:scale(1.75);filter:drop-shadow(0 6px 10px rgba(11,60,93,.25));outline:none}
+.hero-svg .spot-layer{transition:opacity .2s}
+.hero-svg:has(.rd-hover:hover) .spot-layer,.hero-svg:has(.rd-hover:focus-visible) .spot-layer{opacity:0}

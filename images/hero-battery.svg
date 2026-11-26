@@ -162,15 +162,10 @@
 </g>
 
 
-<!-- ===== Research illustrations (uniform cards, sequential spotlight) ===== -->
-<g fill="none" stroke="#0f9d9a" stroke-width="1.5" stroke-dasharray="3 5" opacity=".7"><path d="M347 232 Q461.0 262 575 276"/><path d="M499 232 Q537.0 262 575 276"/><path d="M651 232 Q613.0 262 575 276"/><path d="M803 232 Q689.0 262 575 276"/></g>
-<use href="#cEIS" x="277" y="132"/><use href="#cV" x="429" y="132"/><use href="#cCell" x="581" y="132"/><use href="#cXRD" x="733" y="132"/>
-<!-- spotlight layer: each card enlarges in turn -->
-<g transform="translate(347 182)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.230" dur="16s" repeatCount="indefinite"/><g><animateTransform attributeName="transform" type="scale" values="1;1.75;1.75;1;1" keyTimes="0.000;0.020;0.210;0.230;1.000" dur="16s" repeatCount="indefinite"/><use href="#cEIS" x="-70" y="-50" filter="url(#sh)"/></g></g>
-<g transform="translate(499 182)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.250;0.480" dur="16s" repeatCount="indefinite"/><g><animateTransform attributeName="transform" type="scale" values="1;1;1.75;1.75;1;1" keyTimes="0.000;0.250;0.270;0.460;0.480;1.000" dur="16s" repeatCount="indefinite"/><use href="#cV" x="-70" y="-50" filter="url(#sh)"/></g></g>
-<g transform="translate(651 182)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.500;0.730" dur="16s" repeatCount="indefinite"/><g><animateTransform attributeName="transform" type="scale" values="1;1;1.75;1.75;1;1" keyTimes="0.000;0.500;0.520;0.710;0.730;1.000" dur="16s" repeatCount="indefinite"/><use href="#cCell" x="-70" y="-50" filter="url(#sh)"/></g></g>
-<g transform="translate(803 182)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.750;0.980" dur="16s" repeatCount="indefinite"/><g><animateTransform attributeName="transform" type="scale" values="1;1;1.75;1.75;1;1" keyTimes="0.000;0.750;0.770;0.960;0.980;1.000" dur="16s" repeatCount="indefinite"/><use href="#cXRD" x="-70" y="-50" filter="url(#sh)"/></g></g>
-
+<!-- ===== Research illustrations (uniform cards; spotlight layer is drawn last, on top) ===== -->
+<g fill="none" stroke="#0f9d9a" stroke-width="1.5" stroke-dasharray="3 5" opacity=".75"><path d="M347 232 C347 256 575 244 575 266"/><path d="M499 232 C499 256 575 244 575 266"/><path d="M651 232 C651 256 575 244 575 266"/><path d="M803 232 C803 256 575 244 575 266"/></g>
+<circle cx="575" cy="266" r="3.5" fill="#0f9d9a"/>
+<use href="#cXRD" x="277" y="132"/><use href="#cCell" x="429" y="132"/><use href="#cV" x="581" y="132"/><use href="#cEIS" x="733" y="132"/>
 <!-- ===== AES Lab building ===== -->
 <g>
   <rect x="440" y="300" width="270" height="152" fill="#eef2f5" stroke="#c4ced6"/>
@@ -194,6 +189,18 @@
   <text x="660" y="440" font-family="Inter,Arial,sans-serif" font-size="9" font-weight="600" fill="#5b6b78" text-anchor="middle">R&amp;D</text>
 </g>
 
+
+<!-- ===== Upcycling line: recovered materials -> R&D lab ===== -->
+<g>
+  <rect x="404" y="444" width="40" height="5" rx="2.5" fill="#8a99a6"/>
+  <circle cx="408" cy="446.5" r="2" fill="#5b6b78"/><circle cx="440" cy="446.5" r="2" fill="#5b6b78"/>
+  <rect x="438" y="428" width="6" height="16" fill="#2b5d80"/>
+  <text x="423" y="425" font-family="Inter,Arial,sans-serif" font-size="6.5" font-weight="700" fill="#0f9d9a" text-anchor="middle">upcycling</text>
+  <path d="M414 430 H432 M429 427.5 L432 430 L429 432.5" fill="none" stroke="#0f9d9a" stroke-width="1.3" stroke-linecap="round"/>
+  <g opacity="0"><animateTransform attributeName="transform" type="translate" values="0 0;34 0" dur="3.6s" begin="-0.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="3.6s" begin="-0.0s" repeatCount="indefinite"/><rect x="405" y="436" width="8" height="8" rx="1.5" fill="#36c48a" stroke="#fff" stroke-width=".8"/></g>
+  <g opacity="0"><animateTransform attributeName="transform" type="translate" values="0 0;34 0" dur="3.6s" begin="-1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="3.6s" begin="-1.2s" repeatCount="indefinite"/><rect x="405" y="436" width="8" height="8" rx="1.5" fill="#7f8c96" stroke="#fff" stroke-width=".8"/></g>
+  <g opacity="0"><animateTransform attributeName="transform" type="translate" values="0 0;34 0" dur="3.6s" begin="-2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="3.6s" begin="-2.4s" repeatCount="indefinite"/><rect x="405" y="436" width="8" height="8" rx="1.5" fill="#2a7fb8" stroke="#fff" stroke-width=".8"/></g>
+</g>
 <!-- ===== grid: pylons + lines ===== -->
 <use href="#pylon" x="745" y="300"/>
 <use href="#pylon" x="1005" y="300"/>
@@ -321,4 +328,9 @@
 <use href="#tree" x="120" y="506"/><use href="#tree" x="380" y="512"/><use href="#tree" x="560" y="504"/>
 <use href="#tree" x="860" y="510"/><use href="#tree" x="1080" y="506"/><use href="#tree" x="1300" y="510"/><use href="#tree" x="1520" y="504"/>
 <use href="#tree" x="260" y="448" transform="translate(260 448) scale(.7) translate(-260 -448)"/><use href="#tree" x="1020" y="448" transform="translate(1020 448) scale(.7) translate(-1020 -448)"/>
+<!-- spotlight layer: each R&D card enlarges in turn, above everything -->
+<g transform="translate(347 182)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.230" dur="16s" repeatCount="indefinite"/><g><animateTransform attributeName="transform" type="scale" values="1;1.75;1.75;1;1" keyTimes="0.000;0.020;0.210;0.230;1.000" dur="16s" repeatCount="indefinite"/><use href="#cXRD" x="-70" y="-50" filter="url(#sh)"/></g></g>
+<g transform="translate(499 182)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.250;0.480" dur="16s" repeatCount="indefinite"/><g><animateTransform attributeName="transform" type="scale" values="1;1;1.75;1.75;1;1" keyTimes="0.000;0.250;0.270;0.460;0.480;1.000" dur="16s" repeatCount="indefinite"/><use href="#cCell" x="-70" y="-50" filter="url(#sh)"/></g></g>
+<g transform="translate(651 182)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.500;0.730" dur="16s" repeatCount="indefinite"/><g><animateTransform attributeName="transform" type="scale" values="1;1;1.75;1.75;1;1" keyTimes="0.000;0.500;0.520;0.710;0.730;1.000" dur="16s" repeatCount="indefinite"/><use href="#cV" x="-70" y="-50" filter="url(#sh)"/></g></g>
+<g transform="translate(803 182)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.750;0.980" dur="16s" repeatCount="indefinite"/><g><animateTransform attributeName="transform" type="scale" values="1;1;1.75;1.75;1;1" keyTimes="0.000;0.750;0.770;0.960;0.980;1.000" dur="16s" repeatCount="indefinite"/><use href="#cEIS" x="-70" y="-50" filter="url(#sh)"/></g></g>
 </svg>

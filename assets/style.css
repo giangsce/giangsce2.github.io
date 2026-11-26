@@ -173,3 +173,24 @@ nav a.active{color:var(--accent-dark);box-shadow:inset 0 -2px 0 var(--accent)}
 .logo-light .logo-word{color:#fff}.logo-light .logo-batt .cap{fill:#fff}.logo-light .logo-batt .shell{stroke:#fff}
 .logo-light .logo-org{color:#7fe0dd}.logo-light .logo-div{background:rgba(255,255,255,.3)}
 @media (prefers-reduced-motion:reduce){.logo-batt rect{animation:none!important}}
+
+/* logo v2: "AES Lab" with the E drawn as a charging battery (VinUni navy + red) */
+:root{--vin-navy:#1d3a6d;--vin-red:#c8102e}
+.logo-svg{height:40px;width:auto;display:block;overflow:visible}
+.logo-svg .lg-ink{fill:var(--vin-navy)}
+.logo-svg .lg-red,.logo-svg .lg-redf{fill:var(--vin-red)}
+.logo-svg .lg-inkf{fill:var(--vin-navy)}
+.logo-svg .lg-shell{fill:none;stroke:var(--vin-navy);stroke-width:3.5;opacity:.35}
+.logo-svg .lg-plus{stroke:var(--vin-red);stroke-width:3.2;stroke-linecap:round}
+.logo-svg .lg-minus{stroke:var(--vin-navy);stroke-width:3.2;stroke-linecap:round}
+.logo-svg .lg-bar{transform-box:fill-box;transform-origin:left center;animation:lg-charge 3.2s ease-in-out infinite}
+.logo-svg .lg-b2{animation-delay:.35s}.logo-svg .lg-b3{animation-delay:.7s}
+.logo-svg .lg-slot{opacity:.22}
+@keyframes lg-charge{0%,6%{transform:scaleX(0)}28%,84%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.logo-div{width:1.5px;height:30px;background:#c4ced6}
+.logo-org{font-weight:800;font-size:1.05rem;color:var(--vin-navy);letter-spacing:.02em}
+.logo-light .logo-svg .lg-ink,.logo-light .logo-svg .lg-inkf{fill:#fff}
+.logo-light .logo-svg .lg-shell,.logo-light .logo-svg .lg-minus{stroke:#fff}
+.logo-light .logo-svg .lg-red,.logo-light .logo-svg .lg-redf{fill:#ff6b6b}.logo-light .logo-svg .lg-plus{stroke:#ff6b6b}
+.logo-light .logo-org{color:#fff}
+@media (prefers-reduced-motion:reduce){.logo-svg .lg-bar{animation:none}}

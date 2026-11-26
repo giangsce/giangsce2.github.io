@@ -219,3 +219,12 @@ nav a.active{color:var(--accent-dark);box-shadow:inset 0 -2px 0 var(--accent)}
 .hero-svg .rd-hover:hover,.hero-svg .rd-hover:focus-visible{opacity:1;transform:scale(1.75);filter:drop-shadow(0 6px 10px rgba(11,60,93,.25));outline:none}
 .hero-svg .spot-layer{transition:opacity .2s}
 .hero-svg:has(.rd-hover:hover) .spot-layer,.hero-svg:has(.rd-hover:focus-visible) .spot-layer{opacity:0}
+
+/* VinUni wordmark colours (from vinuni.edu.vn logo) + vertical alignment with the AES Lab logo */
+.logo-org{transform:translateY(4px);letter-spacing:.01em}
+.logo-div{transform:translateY(4px)}
+.logo-org .vin{color:#b5342f}.logo-org .uni{color:#1d3f78}
+.logo-light .logo-org .vin{color:#e8736e}.logo-light .logo-org .uni{color:#fff}
+/* Join page: full-width, justified text */
+.section-lead.wide{max-width:none;text-align:justify}
+.position p{text-align:justify}

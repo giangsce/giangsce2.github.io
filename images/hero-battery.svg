@@ -50,10 +50,12 @@
 <!-- sky -->
 <rect width="1600" height="560" fill="url(#sky)"/>
 <circle cx="1385" cy="96" r="44" fill="#ffd56b"/>
-<circle cx="1385" cy="96" r="60" fill="#ffd56b" opacity=".18"/>
-<use href="#cloud" x="250" y="110"/><use href="#cloud" x="640" y="70" transform="scale(1)"/>
-<use href="#cloud" x="1000" y="140"/><use href="#cloud" x="1460" y="150"/>
-<use href="#cloud" x="420" y="190" opacity=".7"/>
+<circle cx="1385" cy="96" r="60" fill="#ffd56b" opacity=".18"><animate attributeName="r" values="56;66;56" dur="5s" repeatCount="indefinite"/></circle>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;70 0;0 0" dur="38s" repeatCount="indefinite"/><use href="#cloud" x="250" y="110"/></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;-60 0;0 0" dur="46s" repeatCount="indefinite"/><use href="#cloud" x="660" y="64"/></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;80 0;0 0" dur="42s" repeatCount="indefinite"/><use href="#cloud" x="1000" y="140"/></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;-50 0;0 0" dur="34s" repeatCount="indefinite"/><use href="#cloud" x="1460" y="150"/></g>
+<g opacity=".7"><animateTransform attributeName="transform" type="translate" values="0 0;55 0;0 0" dur="30s" repeatCount="indefinite"/><use href="#cloud" x="150" y="190"/></g>
 
 <!-- distant hills -->
 <path d="M0 360 Q160 300 340 340 T720 330 T1100 335 T1600 320 V460 H0Z" fill="#cfe5d0"/>
@@ -90,6 +92,50 @@
   <text x="343" y="372" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" fill="#0b3c5d" text-anchor="middle">RECYCLING</text>
 </g>
 
+
+<!-- ===== Research illustrations ===== -->
+<g fill="none" stroke="#0f9d9a" stroke-width="1.5" stroke-dasharray="3 5" opacity=".7">
+  <path d="M500 238 Q520 262 560 276"/><path d="M640 216 Q620 250 590 274"/><path d="M780 252 Q720 262 600 280"/>
+</g>
+<!-- card A: voltage profile -->
+<g>
+  <animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="4.5s" repeatCount="indefinite"/>
+  <rect x="436" y="150" width="128" height="88" rx="10" fill="#fff" stroke="#c9dde6"/>
+  <text x="448" y="167" font-family="Inter,Arial,sans-serif" font-size="9" font-weight="700" fill="#0b3c5d">Voltage profile</text>
+  <path d="M450 226 H552 M450 226 V176" stroke="#9aa9b4" stroke-width="1.2"/>
+  <path d="M452 220 C470 200 480 196 500 194 S535 188 548 180" fill="none" stroke="#e5675a" stroke-width="2.2" stroke-dasharray="160" stroke-dashoffset="160">
+    <animate attributeName="stroke-dashoffset" values="160;0;0;160" keyTimes="0;.45;.85;1" dur="5s" repeatCount="indefinite"/></path>
+  <path d="M452 186 C470 202 480 206 500 208 S535 214 548 222" fill="none" stroke="#2a7fb8" stroke-width="2.2" stroke-dasharray="160" stroke-dashoffset="160">
+    <animate attributeName="stroke-dashoffset" values="160;160;0;0;160" keyTimes="0;.2;.65;.85;1" dur="5s" repeatCount="indefinite"/></path>
+  <text x="552" y="236" font-family="Inter,Arial,sans-serif" font-size="7" fill="#5b6b78" text-anchor="end">capacity</text>
+</g>
+<!-- card B: Li+ intercalation in layered material -->
+<g>
+  <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="5.2s" begin="-1.5s" repeatCount="indefinite"/>
+  <rect x="580" y="128" width="128" height="88" rx="10" fill="#fff" stroke="#c9dde6"/>
+  <text x="592" y="145" font-family="Inter,Arial,sans-serif" font-size="9" font-weight="700" fill="#0b3c5d">Li⁺ intercalation</text>
+  <g fill="#3d4f5c"><rect x="592" y="156" width="104" height="6" rx="3"/><rect x="592" y="176" width="104" height="6" rx="3"/><rect x="592" y="196" width="104" height="6" rx="3"/></g>
+  <g fill="#9fb3c2"><circle cx="600" cy="159" r="2"/><circle cx="616" cy="159" r="2"/><circle cx="632" cy="159" r="2"/><circle cx="648" cy="159" r="2"/><circle cx="664" cy="159" r="2"/><circle cx="680" cy="159" r="2"/>
+    <circle cx="600" cy="179" r="2"/><circle cx="616" cy="179" r="2"/><circle cx="632" cy="179" r="2"/><circle cx="648" cy="179" r="2"/><circle cx="664" cy="179" r="2"/><circle cx="680" cy="179" r="2"/>
+    <circle cx="600" cy="199" r="2"/><circle cx="616" cy="199" r="2"/><circle cx="632" cy="199" r="2"/><circle cx="648" cy="199" r="2"/><circle cx="664" cy="199" r="2"/><circle cx="680" cy="199" r="2"/></g>
+  <g fill="#36c48a">
+    <circle cy="169" r="4"><animate attributeName="cx" values="586;700;586" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cy="169" r="4"><animate attributeName="cx" values="586;700;586" dur="4s" begin="-1.3s" repeatCount="indefinite"/></circle>
+    <circle cy="189" r="4"><animate attributeName="cx" values="700;586;700" dur="4.6s" repeatCount="indefinite"/></circle>
+    <circle cy="189" r="4"><animate attributeName="cx" values="700;586;700" dur="4.6s" begin="-2.2s" repeatCount="indefinite"/></circle>
+    <circle cy="169" r="4"><animate attributeName="cx" values="586;700;586" dur="4s" begin="-2.7s" repeatCount="indefinite"/></circle>
+  </g>
+</g>
+<!-- card C: XRD characterization -->
+<g>
+  <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="4.8s" begin="-3s" repeatCount="indefinite"/>
+  <rect x="724" y="164" width="128" height="88" rx="10" fill="#fff" stroke="#c9dde6"/>
+  <text x="736" y="181" font-family="Inter,Arial,sans-serif" font-size="9" font-weight="700" fill="#0b3c5d">XRD · structure</text>
+  <path d="M738 240 H840" stroke="#9aa9b4" stroke-width="1.2"/>
+  <path d="M738 238 H752 L755 206 L758 238 H774 L776 222 L778 238 H792 L795 194 L798 238 H812 L814 226 L816 238 H826 L828 214 L830 238 H840" fill="none" stroke="#7c4dbe" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="400" stroke-dashoffset="400">
+    <animate attributeName="stroke-dashoffset" values="400;0;0;400" keyTimes="0;.5;.85;1" dur="6s" repeatCount="indefinite"/></path>
+</g>
+
 <!-- ===== AES Lab building ===== -->
 <g>
   <rect x="440" y="300" width="270" height="152" fill="#eef2f5" stroke="#c4ced6"/>
@@ -104,6 +150,7 @@
   <rect x="545" y="412" width="60" height="40" fill="#2b5d80"/><path d="M575 412 V452" stroke="#9fd0ea" stroke-width="2"/>
   <rect x="535" y="406" width="80" height="6" fill="#0b3c5d"/>
   <!-- sign + battery badge -->
+  <circle cx="575" cy="300" r="30" fill="#0f9d9a" opacity=".25"><animate attributeName="r" values="27;36;27" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".35;0;.35" dur="2.4s" repeatCount="indefinite"/></circle>
   <circle cx="575" cy="300" r="26" fill="#0f9d9a" stroke="#fff" stroke-width="4"/>
   <rect x="562" y="287" width="26" height="28" rx="4" fill="none" stroke="#fff" stroke-width="3"/>
   <rect x="570" y="282" width="10" height="5" rx="1" fill="#fff"/>
@@ -137,13 +184,27 @@
   </g>
   <!-- charge levels -->
   <g fill="#36c48a">
-    <rect x="809" y="412" width="8" height="23"/><rect x="823" y="406" width="8" height="29"/><rect x="837" y="416" width="8" height="19"/>
-    <rect x="870" y="404" width="8" height="31"/><rect x="884" y="410" width="8" height="25"/><rect x="898" y="400" width="8" height="35"/>
-    <rect x="931" y="408" width="8" height="27"/><rect x="945" y="414" width="8" height="21"/><rect x="959" y="404" width="8" height="31"/>
+    <rect x="809" width="8" y="428" height="8"><animate attributeName="height" values="8;36;8" dur="6s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="y" values="428;400;428" dur="6s" begin="0.0s" repeatCount="indefinite"/></rect>
+    <rect x="823" width="8" y="425" height="11"><animate attributeName="height" values="11;41;11" dur="7s" begin="-0.7s" repeatCount="indefinite"/><animate attributeName="y" values="425;395;425" dur="7s" begin="-0.7s" repeatCount="indefinite"/></rect>
+    <rect x="837" width="8" y="422" height="14"><animate attributeName="height" values="14;38;14" dur="8s" begin="-1.4s" repeatCount="indefinite"/><animate attributeName="y" values="422;398;422" dur="8s" begin="-1.4s" repeatCount="indefinite"/></rect>
+    <rect x="870" width="8" y="419" height="17"><animate attributeName="height" values="17;43;17" dur="6s" begin="-2.0999999999999996s" repeatCount="indefinite"/><animate attributeName="y" values="419;393;419" dur="6s" begin="-2.0999999999999996s" repeatCount="indefinite"/></rect>
+    <rect x="884" width="8" y="426" height="10"><animate attributeName="height" values="10;40;10" dur="7s" begin="-2.8s" repeatCount="indefinite"/><animate attributeName="y" values="426;396;426" dur="7s" begin="-2.8s" repeatCount="indefinite"/></rect>
+    <rect x="898" width="8" y="423" height="13"><animate attributeName="height" values="13;37;13" dur="8s" begin="-3.5s" repeatCount="indefinite"/><animate attributeName="y" values="423;399;423" dur="8s" begin="-3.5s" repeatCount="indefinite"/></rect>
+    <rect x="931" width="8" y="420" height="16"><animate attributeName="height" values="16;42;16" dur="6s" begin="-4.199999999999999s" repeatCount="indefinite"/><animate attributeName="y" values="420;394;420" dur="6s" begin="-4.199999999999999s" repeatCount="indefinite"/></rect>
+    <rect x="945" width="8" y="427" height="9"><animate attributeName="height" values="9;39;9" dur="7s" begin="-4.8999999999999995s" repeatCount="indefinite"/><animate attributeName="y" values="427;397;427" dur="7s" begin="-4.8999999999999995s" repeatCount="indefinite"/></rect>
+    <rect x="959" width="8" y="424" height="12"><animate attributeName="height" values="12;36;12" dur="8s" begin="-5.6s" repeatCount="indefinite"/><animate attributeName="y" values="424;400;424" dur="8s" begin="-5.6s" repeatCount="indefinite"/></rect>
   </g>
   <rect x="790" y="364" width="196" height="8" fill="#0f9d9a"/>
-  <circle cx="888" cy="352" r="13" fill="#fff" stroke="#0f9d9a" stroke-width="2.5"/>
-  <use href="#bolt" x="888" y="352" transform="translate(888 352) scale(.9) translate(-888 -352)"/>
+  <rect x="846" y="334" width="84" height="24" rx="12" fill="#fff" stroke="#0f9d9a" stroke-width="2"/>
+  <rect x="856" y="340" width="34" height="12" rx="2" fill="none" stroke="#3d4f5c" stroke-width="1.6"/><rect x="890" y="343" width="3" height="6" fill="#3d4f5c"/>
+  <rect x="858" y="342" height="8" width="6" fill="#36c48a"><animate attributeName="width" values="6;12;18;24;30;24;18;12" keyTimes="0;.125;.25;.375;.5;.625;.75;.875" dur="8s" repeatCount="indefinite"/></rect>
+  <g font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" fill="#0b3c5d">
+    <text x="898" y="350" opacity="0">20%<animate attributeName="opacity" calcMode="discrete" values="1;0;0;0;0;0;0;0" keyTimes="0;.125;.25;.375;.5;.625;.75;.875" dur="8s" repeatCount="indefinite"/></text>
+    <text x="898" y="350" opacity="0">40%<animate attributeName="opacity" calcMode="discrete" values="0;1;0;0;0;0;0;1" keyTimes="0;.125;.25;.375;.5;.625;.75;.875" dur="8s" repeatCount="indefinite"/></text>
+    <text x="898" y="350" opacity="0">60%<animate attributeName="opacity" calcMode="discrete" values="0;0;1;0;0;0;1;0" keyTimes="0;.125;.25;.375;.5;.625;.75;.875" dur="8s" repeatCount="indefinite"/></text>
+    <text x="898" y="350" opacity="0">80%<animate attributeName="opacity" calcMode="discrete" values="0;0;0;1;0;1;0;0" keyTimes="0;.125;.25;.375;.5;.625;.75;.875" dur="8s" repeatCount="indefinite"/></text>
+    <text x="896" y="350" opacity="0">100%<animate attributeName="opacity" calcMode="discrete" values="0;0;0;0;1;0;0;0" keyTimes="0;.125;.25;.375;.5;.625;.75;.875" dur="8s" repeatCount="indefinite"/></text>
+  </g>
 </g>
 
 <!-- ===== Homes with rooftop solar + home battery ===== -->
@@ -154,7 +215,7 @@
   <rect x="1060" y="414" width="16" height="14" fill="#9fd0ea" stroke="#fff" stroke-width="2"/>
   <rect x="1088" y="424" width="14" height="28" fill="#7d5a44"/>
   <rect x="1118" y="420" width="12" height="22" rx="2" fill="#fff" stroke="#0f9d9a" stroke-width="2"/>
-  <rect x="1121" y="430" width="6" height="9" fill="#36c48a"/>
+  <rect x="1121" y="430" width="6" height="9" fill="#36c48a"><animate attributeName="height" values="4;17;4" dur="7s" repeatCount="indefinite"/><animate attributeName="y" values="435;422;435" dur="7s" repeatCount="indefinite"/></rect>
   <rect x="1142" y="410" width="56" height="42" fill="#e9f0f4" stroke="#cbd6dd"/>
   <path d="M1136 412 L1170 384 L1204 412Z" fill="#5b7f99"/>
   <path d="M1150 404 L1166 391 L1182 404Z" fill="url(#panel)" stroke="#9fb6c9"/>
@@ -170,7 +231,13 @@
   <rect x="1268" y="414" width="10" height="8" rx="1" fill="#9fd0ea"/>
   <use href="#bolt" x="1273" y="434" transform="translate(1273 434) scale(.7) translate(-1273 -434)"/>
   <path d="M1282 430 Q1296 446 1294 438" fill="none" stroke="#2d3a44" stroke-width="2.5"/>
+  <path d="M1282 430 Q1296 446 1294 438" fill="none" stroke="#ffcf3f" stroke-width="2" stroke-dasharray="2 5"><animate attributeName="stroke-dashoffset" from="14" to="0" dur=".8s" repeatCount="indefinite"/></path>
   <use href="#car" x="1290" y="426" color="#e5675a"/>
+  <g>
+    <rect x="1312" y="396" width="28" height="14" rx="3" fill="#fff" stroke="#3d4f5c" stroke-width="1.6"/><rect x="1340" y="400" width="3" height="6" fill="#3d4f5c"/>
+    <rect x="1314" y="398" height="10" width="3" rx="1" fill="#e5675a"><animate attributeName="width" values="3;24;24" keyTimes="0;.85;1" dur="5s" repeatCount="indefinite"/><animate attributeName="fill" values="#e5675a;#f2a541;#36c48a;#36c48a" keyTimes="0;.4;.8;1" dur="5s" repeatCount="indefinite"/></rect>
+    <use href="#bolt" x="1326" y="403" transform="translate(1326 403) scale(.6) translate(-1326 -403)"><animate attributeName="opacity" values="1;.2;1" dur="1s" repeatCount="indefinite"/></use>
+  </g>
   <text x="1276" y="377" font-family="Inter,Arial,sans-serif" font-size="9" font-weight="700" fill="#0b3c5d" text-anchor="middle">EV CHARGING</text>
 </g>
 
@@ -199,20 +266,22 @@
 <rect x="0" y="456" width="1600" height="30" fill="#d3d9dd"/>
 <path d="M0 471 H1600" stroke="#fff" stroke-width="2" stroke-dasharray="22 18"/>
 <!-- vehicles -->
-<use href="#car" x="430" y="452" color="#0f9d9a"/>
-<use href="#car" x="1130" y="452" color="#f2a541"/>
-<g>
+<g><animateTransform attributeName="transform" type="translate" from="-500 0" to="1250 0" dur="16s" repeatCount="indefinite"/><use href="#car" x="430" y="450" color="#0f9d9a"/></g>
+<g><animateTransform attributeName="transform" type="translate" from="-1200 0" to="550 0" dur="16s" begin="-9s" repeatCount="indefinite"/><use href="#car" x="1130" y="450" color="#f2a541"/></g>
+<g transform="translate(0 10)"><g><animateTransform attributeName="transform" type="translate" from="1000 0" to="-900 0" dur="24s" repeatCount="indefinite"/>
+  <g transform="translate(1440 0) scale(-1 1)">
   <rect x="660" y="438" width="120" height="30" rx="7" fill="#0b3c5d"/>
   <rect x="668" y="444" width="16" height="11" rx="2" fill="#cfe9f5"/><rect x="690" y="444" width="16" height="11" rx="2" fill="#cfe9f5"/><rect x="712" y="444" width="16" height="11" rx="2" fill="#cfe9f5"/><rect x="734" y="444" width="16" height="11" rx="2" fill="#cfe9f5"/><rect x="756" y="444" width="18" height="15" rx="2" fill="#cfe9f5"/>
   <rect x="668" y="460" width="64" height="3" fill="#36c48a"/>
   <circle cx="684" cy="470" r="6" fill="#2d3a44"/><circle cx="758" cy="470" r="6" fill="#2d3a44"/>
-  <text x="720" y="434" font-family="Inter,Arial,sans-serif" font-size="8" font-weight="700" fill="#0b3c5d">E-BUS</text>
-</g>
-<g>
+  </g>
+  <text x="708" y="466" font-family="Inter,Arial,sans-serif" font-size="8" font-weight="700" fill="#fff">E-BUS</text>
+</g></g>
+<g transform="translate(0 6)"><g><animateTransform attributeName="transform" type="translate" from="760 0" to="-1000 0" dur="13s" begin="-5s" repeatCount="indefinite"/><g transform="translate(1870 0) scale(-1 1)">
   <circle cx="920" cy="472" r="6" fill="none" stroke="#2d3a44" stroke-width="2.5"/><circle cx="950" cy="472" r="6" fill="none" stroke="#2d3a44" stroke-width="2.5"/>
   <path d="M920 472 L932 458 H948 L950 472 M940 458 L944 448 H950" fill="none" stroke="#e5675a" stroke-width="3" stroke-linecap="round"/>
   <rect x="930" y="462" width="12" height="6" rx="1" fill="#0f9d9a"/>
-</g>
+</g></g></g>
 
 <!-- foreground -->
 <path d="M0 500 Q300 486 600 500 T1200 498 T1600 494 V560 H0Z" fill="#94c26a"/>

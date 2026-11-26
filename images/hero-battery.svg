@@ -197,7 +197,7 @@
   <rect x="790" y="364" width="196" height="8" fill="#0f9d9a"/>
   <rect x="846" y="334" width="84" height="24" rx="12" fill="#fff" stroke="#0f9d9a" stroke-width="2"/>
   <rect x="856" y="340" width="34" height="12" rx="2" fill="none" stroke="#3d4f5c" stroke-width="1.6"/><rect x="890" y="343" width="3" height="6" fill="#3d4f5c"/>
-  <rect x="858" y="342" height="8" width="6" fill="#36c48a"><animate attributeName="width" values="6;12;18;24;30;24;18;12" keyTimes="0;.125;.25;.375;.5;.625;.75;.875" dur="8s" repeatCount="indefinite"/></rect>
+  <rect x="858" y="342" height="8" width="6" fill="#36c48a"><animate attributeName="width" values="6;12;18;24;30;24;18;12;6" keyTimes="0;.125;.25;.375;.5;.625;.75;.875;1" dur="8s" repeatCount="indefinite"/></rect>
   <g font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" fill="#0b3c5d">
     <text x="898" y="350" opacity="0">20%<animate attributeName="opacity" calcMode="discrete" values="1;0;0;0;0;0;0;0" keyTimes="0;.125;.25;.375;.5;.625;.75;.875" dur="8s" repeatCount="indefinite"/></text>
     <text x="898" y="350" opacity="0">40%<animate attributeName="opacity" calcMode="discrete" values="0;1;0;0;0;0;0;1" keyTimes="0;.125;.25;.375;.5;.625;.75;.875" dur="8s" repeatCount="indefinite"/></text>
